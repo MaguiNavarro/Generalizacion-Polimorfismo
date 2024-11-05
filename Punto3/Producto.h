@@ -5,7 +5,7 @@ using namespace std;
 
 class Producto
 {
-private:
+protected:
     int codigo;
     string Descripcion;
     double precioBase;
@@ -15,6 +15,7 @@ public:
     virtual ~Producto();
     virtual void mostrarInfo() const ;
     virtual int getCodigo()const ;
+     virtual int getPrecioBase()const ;
     virtual double calcularPrecio()const = 0;
 
 };

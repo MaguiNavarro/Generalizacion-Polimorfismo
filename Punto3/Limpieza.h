@@ -8,12 +8,12 @@ class Limpieza: public Producto
 {
 private:
     bool esToxico;
-    const int IVA = 1.21;
+    static const int IVA = 1.21;
 
 public:
-    Limpieza();
+    Limpieza(int cod,string desc, double precio, bool toxico);
     ~Limpieza();
-    bool esToxico();
+    bool getEsToxico()const ;
     void mostrarInfo()const override ;
     double calcularPrecio()const override;
 
