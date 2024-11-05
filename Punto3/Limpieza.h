@@ -15,7 +15,7 @@ public:
     ~Limpieza();
     bool getEsToxico()const ;
     void mostrarInfo()const override ;
-    double calcularPrecio()const override;
+    double calcularPrecio() const override;
 
 };
 

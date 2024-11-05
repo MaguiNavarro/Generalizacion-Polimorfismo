@@ -14,9 +14,9 @@ public:
     Producto(int cod, string desc, double precio);
     virtual ~Producto();
     virtual void mostrarInfo() const ;
-    virtual int getCodigo()const ;
-     virtual int getPrecioBase()const ;
-    virtual double calcularPrecio()const = 0;
+    virtual int getCodigo()const=0 ;
+
+    virtual double calcularPrecio()const=0;
 
 };
 

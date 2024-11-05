@@ -19,7 +19,8 @@ void Producto:: mostrarInfo() const{
         cout << "Descripcion: " << Descripcion << endl;
   
 }
-     int Producto:: getPrecioBase()const {
-         return this->precioBase;
+
+   Producto:: ~Producto() {
+
     }
 

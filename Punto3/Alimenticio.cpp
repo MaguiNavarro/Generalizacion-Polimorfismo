@@ -24,5 +24,6 @@ Alimenticio:: Alimenticio(int cod, string desc, double precio, int mesVenc, int 
         cout << "Precio con IVA: $" << calcularPrecio() << endl;
     }
       double Alimenticio:: calcularPrecio() const  {
-        return precioBase * IVA;
+        double monto= precioBase +( precioBase * IVA);
+        return monto;
     }

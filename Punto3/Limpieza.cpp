@@ -12,6 +12,7 @@ Limpieza:: Limpieza(int codig, string desc, double precio,bool toxico)
         cout << "Es toxico: " << (esToxico ? "Si" : "No") << endl;
         cout << "Precio con IVA: $" << calcularPrecio() << endl;
     }
-  double Limpieza:: calcularPrecio() const  {
-        return precioBase * IVA;
+  double Limpieza:: calcularPrecio()const   {
+       double monto = precioBase + (precioBase * IVA);
+        return monto;
     }  
